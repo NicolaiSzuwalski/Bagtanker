@@ -1,0 +1,15 @@
+
+
+.BackgroundContainer {
+    z-index: -2;
+    background-image: url(../../assets/Images/BreadBackground.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    min-height: 16vh; 
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}

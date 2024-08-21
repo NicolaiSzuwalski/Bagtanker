@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from './LoginPage.module.scss'
+import { HeaderBackground } from '../../components/HeaderBackground/HeaderBackground'
 
 export const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <section>
+      <HeaderBackground></HeaderBackground>
+      <p>Login</p>
+    </section>
   )
 }
