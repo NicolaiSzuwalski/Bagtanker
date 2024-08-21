@@ -14,6 +14,7 @@ export const AppRouter = () => {
         <Route index element={<HomePage/>}></Route>
         <Route path='/Products' element={<ProductPage/>}></Route>
         <Route path='/News' element={<NewsPage/>}></Route>
+        {/* <Route path="/news/:id" element={<NewsDetail />} /> */}
         <Route path='/Contact' element={<ContactPage/>}></Route>
         <Route path='/Login' element={<LoginPage/>}></Route>
     </Routes>

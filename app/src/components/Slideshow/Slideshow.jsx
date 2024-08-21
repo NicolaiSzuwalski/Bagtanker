@@ -5,6 +5,7 @@ import slide2 from '../../assets/Slide/Slide2.jpeg';
 import slide3 from '../../assets/Slide/Slide3.jpeg';
 import slide4 from '../../assets/Slide/Slide4.jpeg';
 import slide5 from '../../assets/Slide/Slide5.jpeg';
+import slideNav from '../../assets/Slide/SlideNav.png'
 
 
 export const Slideshow = () => {
@@ -14,10 +15,14 @@ export const Slideshow = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 5000);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, [slides.length]);
+
+    const handleNavClick = (index) => {
+        setCurrentSlide(index);
+    };
 
     return (
         <div className={styles.Slideshow}>
@@ -29,6 +34,19 @@ export const Slideshow = () => {
                         style={{ backgroundImage: `url(${slide})` }}
                     />
                 ))}
+            </div>
+            
+            <div className={styles.SlideNavContainer}>
+                <img src={slideNav} alt="slideNav" className={styles.SlideNavImage} />
+                <div className={styles.NavDots}>
+                    {slides.map((_, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.Dot} ${index === currentSlide ? styles.ActiveDot : ''}`}
+                            onClick={() => handleNavClick(index)}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );

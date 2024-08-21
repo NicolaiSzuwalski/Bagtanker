@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.NewsWrapper{
+    margin-left: 10%;
+    width: 40%;
+    max-height: 500px;
+    h1{
+        font-family: "Open Sans", sans-serif;
+        font-size: 48px;
+        color: #323540;
+        
+    }
+    .NewsGrid{
+        background-color: rgba(50, 53, 64, 0.9);
+        border-radius: 10px;
+        border: 1px solid black;
+        .NewsItem{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            .ImageWrapper{
+                padding: 20px;
+                img{
+                    width: 100%;
+                    border: solid 1px #FFFFFF;
+                    border-radius: 5px;
+                }
+            }
+
+            .TextWrapper{
+                padding: 20px;
+                font-family: "Open Sans", sans-serif;
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                b{
+
+                }
+                h2{
+                    
+                }
+                p{
+                    
+                }
+            }
+        }
+    }
+}
