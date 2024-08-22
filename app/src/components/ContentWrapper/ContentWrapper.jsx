@@ -11,10 +11,10 @@ export const ContentWrapper = (props) => {
     }
 
     return (
-        <>
+        <section>
             <h1>{props.title}</h1>
             <article>{props.children}</article>
-        </>
+        </section>
     );
 };
 

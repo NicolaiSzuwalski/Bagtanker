@@ -1,15 +1,18 @@
 import React from 'react'
-import { HeaderBackground } from '../../components/HeaderBackground/HeaderBackground'
+import { GetProducts } from '../../components/GetProducts/getProducts'
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper'
 import styles from './ProductPage.module.scss'
 
 export const ProductPage = () => {
   return (
     <>
     <section>
-      <HeaderBackground></HeaderBackground>
-
+      <MainWrapper title='Produkter'>
+        <GetProducts></GetProducts>
+      </MainWrapper>
+      
     </section>
-    <p>produkter</p>
+    
     </>
   )
 }

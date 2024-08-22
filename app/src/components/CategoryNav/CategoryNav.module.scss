@@ -1,22 +1,24 @@
+/* Reset body margins and padding */
+
+
 .CategoryNav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
     background-color: #323540;
-    width: 100%;
+    width: 100%; 
     height: 8vh;
-    position: fixed; 
-    top: 16vh;
-    left: 0;
-    z-index: 1000; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    margin: 0; 
 }
+
 
 .NavLink {
     color: white;
     text-decoration: none;
-    margin: 0 30px; 
+    padding: 0 15px; 
     font-size: 1.2em;
     font-family: "Open Sans", sans-serif;
     transition: color 0.3s ease;
@@ -31,3 +33,4 @@
         border-bottom: 2px solid orange;
     }
 }
+

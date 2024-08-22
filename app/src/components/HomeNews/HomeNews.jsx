@@ -16,6 +16,13 @@ export const HomeNews = () => {
         return format(date, 'dd. MMMM. yyyy:');
     };
 
+    const truncateText = (text, wordLimit) => {
+        if (!text) return '';
+        const words = text.split(' ');
+        if (words.length <= wordLimit) return text;
+        return words.slice(0, wordLimit).join(' ') + '...';
+    };
+
     const getNewsData = async () => {
         if (supabase) {
             const { data, error } = await supabase
@@ -28,7 +35,6 @@ export const HomeNews = () => {
                 const selectedNews = shuffled.slice(0, 3);
                 
                 setData(selectedNews);
-                console.log(selectedNews)
             }
         }
     };
@@ -54,7 +60,7 @@ export const HomeNews = () => {
                         <div className={styles.TextWrapper}>
                         <b>{formatDate(newsItem.created_at)}</b>
                         <h2>{newsItem.title}</h2>
-                        <p>{newsItem.teaser}</p>
+                        <p>{truncateText(newsItem.teaser, 35, '...')}</p>
                         </div>
                         
                     </NavLink>
