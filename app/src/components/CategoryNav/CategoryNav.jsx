@@ -31,7 +31,7 @@ export const CategoryNav = () => {
           {data.map((category) => (
             <NavLink
               key={category.id}
-              to={`/category/${category.id}`} // Assuming you're routing to a category page by ID
+              to={`/category/${category.id}`} 
               className={styles.NavLink}
               activeClassName={styles.ActiveLink}
             >
