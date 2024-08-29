@@ -17,7 +17,7 @@ export const MainWrapper = (props) => {
   }
 
   return (
-    <>
+    <div className={styles.WrapThisBitch}>
       <section className={styles.MainWrapper}>
         <Header></Header>
 
@@ -31,7 +31,7 @@ export const MainWrapper = (props) => {
         <div>{props.children}</div>
       </Main>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 

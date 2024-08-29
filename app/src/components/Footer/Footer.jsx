@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Footer.module.scss'
 import FooterLogo from '../../assets/Images/FooterHeader.png'
+import { SubmitNewsLetter } from '../SubmitNewsLetter/SubmitNewsLetter'
 
 export const Footer = () => {
+
+
   return (
     <footer className={styles.FooterMain}>
 
@@ -22,24 +25,8 @@ export const Footer = () => {
             </div>
 
         </div>
-        <div className={styles.SignUp}>
-
-            <h1>Tilmeld dig Bagtankers nyhedsbrev</h1>
-
-            <p> Få vores nyheder direkte i din indbakke </p>
-
-            <form className={styles.NewsletterForm}>
-              <input 
-                type="email" 
-                placeholder="Indtast din email" 
-                className={styles.EmailInput}
-                required 
-              />
-          </form>
-          <button type="submit" className={styles.SignUpButton}>
-              Tilmeld
-            </button>
-            
+        <div className={styles.newsLetter}>
+        <SubmitNewsLetter></SubmitNewsLetter>
         </div>
       </section>
 

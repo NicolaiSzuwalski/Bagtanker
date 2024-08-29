@@ -1,0 +1,30 @@
+.loginContainer{
+    font-size: 1em;
+    margin-top: 3vh;
+    background-color: #323540;
+    border-radius: 10px;
+    box-shadow: -11px -8px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -11px -8px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px -8px 5px 0px rgba(0,0,0,0.75);
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 4em;
+        gap: 1em;
+        align-items: center;
+        input{
+            padding: 10px;
+            width: 40%;
+            border-radius: 10px;
+            background-color: #efefef;
+            border: none;
+        }
+        button{
+            width: 20%;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #efefef;
+            border: none;
+        }
+    }
+}

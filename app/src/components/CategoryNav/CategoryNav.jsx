@@ -18,7 +18,6 @@ export const CategoryNav = () => {
                 console.error(error);
             } else {
                 setData(data);
-                console.log(data)
             }
         }
     };
@@ -33,7 +32,6 @@ export const CategoryNav = () => {
               key={category.id}
               to={`/category/${category.id}`} 
               className={styles.NavLink}
-              activeClassName={styles.ActiveLink}
             >
               {category.title}
             </NavLink>

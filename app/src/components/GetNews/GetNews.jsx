@@ -17,7 +17,6 @@ export const GetNews = () => {
                 console.error(error)
             }else{
                 setData(data)
-                console.log(data)
             }
         }
     }
